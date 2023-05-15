@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de Datos Personales</title>
+    <style>
+      body {
+        background-image: url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt58b3304a9d38b091/60f5d6e21929bc58854d00a6/072221_AkshanChampionTheme_Banner.jpg');
+        background-size: cover;
+        color: #fff;
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 16px;
+      }
+      
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+      }
+      
+      input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-bottom: 2px solid #fff;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-family: "Goudy Old Style", serif;
+      }
+      
+      input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+        outline: none;
+        border-bottom: 2px solid #ff4500;
+      }
+      
+      input[type="submit"] {
+        background-color: #ff4500;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-family: "Goudy Old Style", serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #000;
+        border: 2px solid #ff4500;
+        color: #ff4500;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ingresa tus datos personales</h1>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido">
+      
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad">
+      
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo">
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono">
+      
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
